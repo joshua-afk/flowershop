@@ -1,0 +1,18 @@
+{
+    "name": "flower-shop",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist",
+        "build:css": "tailwind build src/style.css -o dist/tailwind.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://joshua-afk.github.io/flowershop",
+    "dependencies": {
+        "gh-pages": "^3.0.0",
+        "tailwindcss": "^1.4.6"
+    }
+}
