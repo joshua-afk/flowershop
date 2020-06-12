@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <title>Flower Website</title>
+
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+  <!-- tailwind -->
+  <link rel="stylesheet" href="tailwind.css"></link>
+
+  <!-- glider -->
+  <link rel="stylesheet" href="../vendors/glider.js-master/glider.min.css"></link>
+
+  <!-- font awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="app.css"></link>
+</head>
+
+<body class="font-body">
+  <!-- nav/header -->
+  <nav class="flex px-10 absolute bg-white w-full z-20">
+    <!-- logo -->
+    <span class="flex flex-1 items-center uppercase font-bold text-3xl text-gray-900">logo</span>
+
+    <!-- nav items -->
+    <ul class="flex flex-1 justify-center">
+      <li class="flex items-center mx-4 font-bold"><a href="#" class="text-gray-800 nav-link active">home</a></li>
+      <li class="flex items-center mx-4 font-bold"><a href="#" class="text-gray-800 nav-link">collections</a></li>
+      <li class="flex items-center mx-4 font-bold"><a href="#" class="text-gray-800 nav-link">occasions</a></li>
+      <li class="flex items-center mx-4 font-bold"><a href="#" class="text-gray-800 nav-link">gifts</a></li>
+    </ul>
+
+    <!-- contact -->
+    <a class="flex flex-1 items-center justify-end text-gray-800 font-bold" href="#">contact us</a>
+  </nav>
+
+  <!-- hero -->
+  <section class="flex h-screen relative z-10">
+    <!-- card -->
+    <article class="absolute p-24 w-7/12 bg-white z-40 hot-event custom-shadow">
+      <header>
+        <p class="text-red-300 font-bold">Hot Event</p>
+        <h2 class="text-5xl text-gray-800 font-bold">Mother's Day</h2>
+      </header>
+
+      <p class="w-5/6 mb-10 leading-relaxed text-gray-700">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+
+      <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white py-2 px-4 border-2 border-red-400 hover:border-transparent rounded uppercase">learn more</button>
+    </article>
+
+    <!-- left -->
+    <div class="w-1/2 bg-gray-200 z-30"></div>
+
+    <!-- right -->
+    <div class="w-1/2 dark-overlay">
+      <figure class="h-full overflow-hidden object-contain">
+        <img class="w-full h-full object-cover" src="storage/hero-flower.jpg" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- carousel -->
+  <section class="flex justify-center absolute w-full carousel-section z-10">
+    <div class="bg-white w-4/5 p-12 custom-shadow carousel-wrapper">
+      <div class="glider-contain">
+        <div class="glider pt-1">
+          <figure class="w-1/4 mx-3 px-4">
+            <div class="mb-3 object-contain overflow-hidden carousel-image">
+              <img class="w-full h-full object-cover rounded" src="storage/latest/1.jpg" />
+            </div>
+
+            <figcaption class="text-sm text-gray-800 font-bold">Beautiful You</figcaption>
+          </figure>
+
+          <figure class="w-1/4 mx-3 px-4">
+            <div class="mb-3 object-contain overflow-hidden carousel-image">
+              <img class="w-full h-full object-cover rounded" src="storage/latest/5.jpg" />
+            </div>
+
+            <figcaption class="text-sm text-gray-800 font-bold">Beautiful You</figcaption>
+          </figure>
+
+          <figure class="w-1/4 mx-3 px-4">
+            <div class="mb-3 object-contain overflow-hidden carousel-image">
+              <img class="w-full h-full object-cover rounded" src="storage/latest/3.jpg" />
+            </div>
+
+            <figcaption class="text-sm text-gray-800 font-bold">Beautiful You</figcaption>
+          </figure>
+
+          <figure class="w-1/4 mx-3 px-4">
+            <div class="mb-3 object-contain overflow-hidden carousel-image">
+              <img class="w-full h-full object-cover rounded" src="storage/latest/4.jpg" />
+            </div>
+
+            <figcaption class="text-sm text-gray-800 font-bold">Beautiful You</figcaption>
+          </figure>
+
+          <figure class="w-1/4 mx-3">
+            <figure class="mb-3 object-contain overflow-hidden custom-shadow-border carousel-image">
+              <img class="w-full h-full object-cover rounded" src="storage/latest/5.jpg" />
+            </figure>
+
+            <figcaption class="text-sm text-gray-800 font-bold">Beautiful You</figcaption>
+          </figure>
+        </div>
+
+        <button aria-label="Previous" class="glider-prev"><i class="fas fa-chevron-left text-2xl"></i></button>
+        <button aria-label="Next" class="glider-next"><i class="fas fa-chevron-right text-2xl"></i></button>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- event -->
+  <section class="bg-blue-200">
+    <div style="height: 170px"></div>
+
+    <div class="flex mx-auto py-12 w-4/5 h-100">
+      <!-- description -->
+      <div class="w-1/2 flex justify-center flex-col">
+        <h2 class="w-3/5 mb-4 text-5xl text-gray-900 font-bold leading-tight">Celebrating Mother's Day</h2>
+        <p class="w-5/6 mb-10 leading-relaxed text-gray-800">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+
+      <!-- video -->
+      <div class="w-1/2">
+        <iframe
+          width="100%"
+          height="380"
+          src="https://www.youtube.com/embed/a3ICNMQW7Ok"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- collections -->
+  <section class="bg-gray-100 py-8">
+    <header class="mb-6">
+      <h3 class="text-center text-2xl text-gray-900 font-bold">Collections</h3>
+      <div class="mx-auto rounded custom-border">
+    </header>
+
+    <!-- brochure -->
+    <ul class="flex mb-8 mx-auto w-4/6">
+      <li class="w-1/4 mx-4 bg-white custom-shadow rounded">
+        <figure class="object-contain overflow-hidden carousel-image">
+          <img class="w-full h-full object-cover" src="storage/brochure/1.jpg" />
+        </figure>
+
+        <div class="p-4">
+          <h5 class="mb-3 text-sm text-gray-800 font-bold">Beautiful You</h5>
+
+          <!-- rating -->
+          <div class="mb-1 text-sm">
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star-half-alt color-yellow"></i>
+          </div>
+
+          <!-- reviews -->
+          <p class="mb-2 text-sm text-gray-900 font-medium">
+            4.5<span class="text-xs text-gray-600">/5</span>
+            | <span class="text-gray-600">20 Review(s)</span>
+          </p>
+
+          <footer class="flex">
+            <p class="flex-1 self-end text-sm text-red-400 font-bold">$35</p>
+            <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white px-1 border-2 border-red-400 hover:border-transparent rounded uppercase">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+          </footer>
+        </div>
+      </li>
+
+      <li class="w-1/4 mx-4 bg-white custom-shadow rounded">
+        <figure class="object-contain overflow-hidden carousel-image">
+          <img class="w-full h-full object-cover" src="storage/brochure/2.jpg" />
+        </figure>
+
+        <div class="p-4">
+          <h5 class="mb-3 text-sm text-gray-800 font-bold">Beautiful You</h5>
+
+          <!-- rating -->
+          <div class="mb-1 text-sm">
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star-half-alt color-yellow"></i>
+          </div>
+
+          <!-- reviews -->
+          <p class="mb-2 text-sm text-gray-900 font-medium">
+            4.5<span class="text-xs text-gray-600">/5</span>
+            | <span class="text-gray-600">20 Review(s)</span>
+          </p>
+
+          <footer class="flex">
+            <p class="flex-1 self-end text-sm text-red-400 font-bold">$35</p>
+            <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white px-1 border-2 border-red-400 hover:border-transparent rounded uppercase">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+          </footer>
+        </div>
+      </li>
+
+      <li class="w-1/4 mx-4 bg-white custom-shadow rounded">
+        <figure class="object-contain overflow-hidden carousel-image">
+          <img class="w-full h-full object-cover" src="storage/brochure/3.jpg" />
+        </figure>
+
+        <div class="p-4">
+          <h5 class="mb-3 text-sm text-gray-800 font-bold">Beautiful You</h5>
+
+          <!-- rating -->
+          <div class="mb-1 text-sm">
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star-half-alt color-yellow"></i>
+          </div>
+
+          <!-- reviews -->
+          <p class="mb-2 text-sm text-gray-900 font-medium">
+            4.5<span class="text-xs text-gray-600">/5</span>
+            | <span class="text-gray-600">20 Review(s)</span>
+          </p>
+
+          <footer class="flex">
+            <p class="flex-1 self-end text-sm text-red-400 font-bold">$35</p>
+            <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white px-1 border-2 border-red-400 hover:border-transparent rounded uppercase">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+          </footer>
+        </div>
+      </li>
+
+      <li class="w-1/4 mx-4 bg-white custom-shadow rounded">
+        <figure class="object-contain overflow-hidden carousel-image">
+          <img class="w-full h-full object-cover" src="storage/brochure/4.jpg" />
+        </figure>
+
+        <div class="p-4">
+          <h5 class="mb-3 text-sm text-gray-800 font-bold">Beautiful You</h5>
+
+          <!-- rating -->
+          <div class="mb-1 text-sm">
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star-half-alt color-yellow"></i>
+          </div>
+
+          <!-- reviews -->
+          <p class="mb-2 text-sm text-gray-900 font-medium">
+            4.5<span class="text-xs text-gray-600">/5</span>
+            | <span class="text-gray-600">20 Review(s)</span>
+          </p>
+
+          <footer class="flex">
+            <p class="flex-1 self-end text-sm text-red-400 font-bold">$35</p>
+            <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white px-1 border-2 border-red-400 hover:border-transparent rounded uppercase">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+          </footer>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="flex mb-8 mx-auto w-4/6">
+      <li class="w-1/4 mx-4 bg-white custom-shadow rounded">
+        <figure class="object-contain overflow-hidden carousel-image">
+          <img class="w-full h-full object-cover" src="storage/brochure/5.jpg" />
+        </figure>
+
+        <div class="p-4">
+          <h5 class="mb-3 text-sm text-gray-800 font-bold">Beautiful You</h5>
+
+          <!-- rating -->
+          <div class="mb-1 text-sm">
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star-half-alt color-yellow"></i>
+          </div>
+
+          <!-- reviews -->
+          <p class="mb-2 text-sm text-gray-900 font-medium">
+            4.5<span class="text-xs text-gray-600">/5</span>
+            | <span class="text-gray-600">20 Review(s)</span>
+          </p>
+
+          <footer class="flex">
+            <p class="flex-1 self-end text-sm text-red-400 font-bold">$35</p>
+            <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white px-1 border-2 border-red-400 hover:border-transparent rounded uppercase">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+          </footer>
+        </div>
+      </li>
+
+      <li class="w-1/4 mx-4 bg-white custom-shadow rounded">
+        <figure class="object-contain overflow-hidden carousel-image">
+          <img class="w-full h-full object-cover" src="storage/brochure/6.jpg" />
+        </figure>
+
+        <div class="p-4">
+          <h5 class="mb-3 text-sm text-gray-800 font-bold">Beautiful You</h5>
+
+          <!-- rating -->
+          <div class="mb-1 text-sm">
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star-half-alt color-yellow"></i>
+          </div>
+
+          <!-- reviews -->
+          <p class="mb-2 text-sm text-gray-900 font-medium">
+            4.5<span class="text-xs text-gray-600">/5</span>
+            | <span class="text-gray-600">20 Review(s)</span>
+          </p>
+
+          <footer class="flex">
+            <p class="flex-1 self-end text-sm text-red-400 font-bold">$35</p>
+            <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white px-1 border-2 border-red-400 hover:border-transparent rounded uppercase">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+          </footer>
+        </div>
+      </li>
+
+      <li class="w-1/4 mx-4 bg-white custom-shadow rounded">
+        <figure class="object-contain overflow-hidden carousel-image">
+          <img class="w-full h-full object-cover" src="storage/brochure/2.jpg" />
+        </figure>
+
+        <div class="p-4">
+          <h5 class="mb-3 text-sm text-gray-800 font-bold">Beautiful You</h5>
+
+          <!-- rating -->
+          <div class="mb-1 text-sm">
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star-half-alt color-yellow"></i>
+          </div>
+
+          <!-- reviews -->
+          <p class="mb-2 text-sm text-gray-900 font-medium">
+            4.5<span class="text-xs text-gray-600">/5</span>
+            | <span class="text-gray-600">20 Review(s)</span>
+          </p>
+
+          <footer class="flex">
+            <p class="flex-1 self-end text-sm text-red-400 font-bold">$35</p>
+            <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white px-1 border-2 border-red-400 hover:border-transparent rounded uppercase">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+          </footer>
+        </div>
+      </li>
+
+      <li class="w-1/4 mx-4 bg-white custom-shadow rounded">
+        <figure class="object-contain overflow-hidden carousel-image">
+          <img class="w-full h-full object-cover" src="storage/brochure/1.jpg" />
+        </figure>
+
+        <div class="p-4">
+          <h5 class="mb-3 text-sm text-gray-800 font-bold">Beautiful You</h5>
+
+          <!-- rating -->
+          <div class="mb-1 text-sm">
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star color-yellow"></i>
+            <i class="fas fa-star-half-alt color-yellow"></i>
+          </div>
+
+          <!-- reviews -->
+          <p class="mb-2 text-sm text-gray-900 font-medium">
+            4.5<span class="text-xs text-gray-600">/5</span>
+            | <span class="text-gray-600">20 Review(s)</span>
+          </p>
+
+          <footer class="flex">
+            <p class="flex-1 self-end text-sm text-red-400 font-bold">$35</p>
+            <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white px-1 border-2 border-red-400 hover:border-transparent rounded uppercase">
+              <i class="fas fa-shopping-cart text-xs"></i>
+            </button>
+          </footer>
+        </div>
+      </li>
+    </ul>
+
+    <div class="text-center">
+      <button class="bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white py-2 px-4 border-2 border-red-400 hover:border-transparent rounded uppercase">SHOW MORE</button>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="flex w-4/5 py-8 bg-white mx-auto">
+    <!-- email -->
+    <div class="w-2/5">
+      <h3 class="mb-2 font-bold text-2xl text-gray-800">Flower Website</h3>
+      <p class="w-5/6 mb-4 text-sm leading-relaxed text-gray-700">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+
+      <form class="flex flex-row w-5/6">
+        <button class="bg-red-400 hover:bg-red-500 text-white font-semibold py-2 px-4 rounded-l">Subscribe</button>
+        <input class="h-10 bg-gray-100 text-grey-darker py-2 font-normal text-grey-darkest font-semibold w-full py-1 px-2 outline-none text-gray-600 rounded-r" type="text" placeholder="Your Email Address">
+      </form>
+    </div>
+
+    <!-- links -->
+    <div class="w-1/5">
+      <header class="mb-3">
+        <h4 class="text-gray-800 text-sm font-semibold">Links</h4>
+        <div class="rounded custom-border-footer"></div>
+      </header>
+
+      <ul>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">About</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">Testimonials</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">Blog</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <!-- customer care -->
+    <div class="w-1/5">
+      <header class="mb-3">
+        <h4 class="text-gray-800 text-sm font-semibold">Customer Care</h4>
+        <div class="rounded custom-border-footer"></div>
+      </header>
+
+      <ul>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">Contact Us</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">FAQs</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">Payment Methods</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">Terms & Conditions</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- get in touch -->
+    <div class="w-1/5">
+      <header class="mb-3">
+        <h4 class="text-gray-800 text-sm font-semibold">Get in Touch</h4>
+        <div class="rounded custom-border-footer"></div>
+      </header>
+
+      <ul>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">flower-web@domain.com</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">09123456789</a></li>
+        <li class="mb-1 text-sm text-gray-700"><a href="#">Sample Location, Sample St.</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- glider -->
+  <script src="../vendors/glider.js-master/glider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
